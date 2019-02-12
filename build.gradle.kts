@@ -15,6 +15,15 @@ repositories {
 }
 
 dependencies {
-    // Use the Kotlin test library.
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    implementation("net.sourceforge.pmd:pmd-java:6.7.0")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.register<Copy>("copyJar") {
+    from(tasks.named<Jar>("jar").flatMap { it.archiveFile })
+    into(project.file("."))
 }

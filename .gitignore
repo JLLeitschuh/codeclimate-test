@@ -152,6 +152,8 @@ gradle-app.setting
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
 
+# Want this checked into source control because we want to use it in PMD
+!codeclimate-test.jar
 # Cache of project
 .gradletasknamecache
 
