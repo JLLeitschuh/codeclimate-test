@@ -1,0 +1,6 @@
+plugins:
+  pmd:
+    enabled: true
+    config:
+      rules:
+      - "https://raw.githubusercontent.com/JLLeitschuh/codeclimate-test/master/my-custom.xml"
