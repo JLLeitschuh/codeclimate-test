@@ -4,21 +4,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
     <description>This just needs to be here</description>
-    <rule name="MaliciousPmdRuleForRCE"
-          message="Avoid using 'while' statements without curly braces"
-          class="codeclimate.test.MaliciousPmdRuleForRCE">
-        <description>
-            This is malicious.
-        </description>
-        <priority>3</priority>
+    <!--<rule name="MaliciousPmdRuleForRCE"-->
+          <!--message="Avoid using 'while' statements without curly braces"-->
+          <!--class="codeclimate.test.MaliciousPmdRuleForRCE">-->
+        <!--<description>-->
+            <!--This is malicious.-->
+        <!--</description>-->
+        <!--<priority>3</priority>-->
 
-        <example>
-            <![CDATA[
-				public void doSomething() {
-					while (true)
-					x++;
-				}
-			]]>
-        </example>
-    </rule>
+        <!--<example>-->
+            <!--<![CDATA[-->
+				<!--public void doSomething() {-->
+					<!--while (true)-->
+					<!--x++;-->
+				<!--}-->
+			<!--]]>-->
+        <!--</example>-->
+    <!--</rule>-->
+    <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals"></rule>
 </ruleset>
